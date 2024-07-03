@@ -1,6 +1,11 @@
 def prime(num):
+        '''
+        check for prime number
+        '''
+        # checking even and 1
         if num == 1 or (num % 2 == 0 and num != 2):
             return False
+        # checking odd for prime
         i = 3
         while i < num:
             if num % i == 0:
@@ -11,6 +16,9 @@ def prime(num):
 
 
 def get_factor(num):
+    '''
+    make a list of prime numbers
+    '''
     factors = []
     i = 2
     while i < num:
